@@ -1,11 +1,14 @@
-var age = 5;
+//for loop
 
-while (age < 10) {
+var links = document.getElementsByTagName ("a");
+
+//standard name for variables is x or j or i
+//index variable; loop condition; incrementer for ending loop
+for ( i = 1; i <= links.length; i++) {      
     
-    console.log ("Your age is less than 10");
-    age++;           //increment adds 1 to each loop
+    console.log ("This is link number" + i);          
     
-}                   //loop for 5 times
+}                   
     
-    document.write ("You are now over 10");
+document.write ("All links are now looped");
     
