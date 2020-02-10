@@ -1,14 +1,22 @@
-//for loop
-
-var links = document.getElementsByTagName ("a");
+//for loop: continue or break
 
 //standard name for variables is x or j or i
 //index variable; loop condition; incrementer for ending loop
-for ( i = 1; i <= links.length; i++) {      
+for ( i = 0; i <= 10; i++)       
     
-    console.log ("This is link number" + i);          
+    if (i === 3 || i === 5) {         
     
-}                   
-    
-document.write ("All links are now looped");
+        continue;
+    }  //skip code block for 3 or 5 to go back up to the code to start with 4 or 6
+
+console.log (i);
+
+    if (i === 7) {
+        
+        break; 
+    }   //break out of loop for good with no loop for 8 or 9
+
+}
+
+console.log ("I have broken out of the loop");
     
