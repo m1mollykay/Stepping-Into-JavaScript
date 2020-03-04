@@ -1,49 +1,21 @@
-//functions
+//variable scope
 
-function getAverage (a,b) {
-  
-    var average = (a + b) /2;
+var average = 0;  //changing original local variable into a global variable  
+
+function getAverage (a,b) { //local variable inside function code block 
+    average = (a + b) /2;
     console.log (average);
     return average;
 
-getAverage (7, 12);
+//global variable can be used anywhere in the code to call wherever needed
+var myResult = getAverage (7,11);
 
-getAverage ();
-
-var myResult = getAverage (7,8);
-    console.log ("the average is " + myResult);
-}
-
-function alert(string) {
-    alert ("hello");
-}
-
-function getAverage (a,b,c,d,e,f) {
-    var average = (a + b + c + d + e + f) /6;
-    var myResult = getAverage (7,8,9,10,11,12);
-    console.log ("the average is " + myResult);    
-}
-
-function getAverage (a,b,c,d,e) {
-    var average = (27,32,56,62,75) /5;
-    var myResult = getAverage (27,32,56,62,75);
-    console.log ("this average is " + myResult);
+function logResult() {
     
+  console.log ("the average is " + myResult +  "inside the function"); 
 }
 
-function getDifference (x,y) {
-    var difference = (x - y);
-    var difference = (6256, 1971);
-    var myResult = getDifference (6256 - 1971);
-    console.log ("the difference is " + myResult);
-}
-
-function alert(string1)
-function alert(string2) {
-    var string1 = ("say_Good_Night_Now");
-    var string2 = ("time_For_Sleep_Good_Night");
-    alert string1 + string2;
-    console.log (string1 + string2);
-}
-//end functions
+ logResult();
   
+}
+//end variable scope
